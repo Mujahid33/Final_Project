@@ -1,0 +1,136 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>MY WEBSITES</title>
+
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+  <!-- Compiled and minified JavaScript -->
+  
+</head>
+<body>
+
+
+
+  <!-- Modal Structure -->
+  <div id="modal" class="modal">
+      <div class="modal-content blue accent-3 white-text">
+        <h4>Welcome To My Websites</h4>
+        <p>This is about page. In this page, you can see my profil & my skills</p>
+        <p>If you can't exit from this modal, just press esc</p>
+      </div>
+      <div class="modal-footer blue accent-3">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat white-text">Go to page</a>
+      </div>
+  </div>
+
+  <div class="navbar-fixed">
+    <nav class="blue accent-3">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="index.html" class="brand-logo">MY WEBSITES</a>
+          <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <ul class="sidenav" id="mobile-demo">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+  </ul>
+
+  <section class="about">
+    <div class="container">
+      <div class="row">
+        <h4 class="center blue-text text-accent-3">ABOUT ME</h4>
+        <hr class="center blue accent-3" style="padding: 1px;">
+        <div class="col m6">
+          <table class="blue-text text-accent-3">
+            <tr>
+              <td>Name </td>
+              <td> : </td>
+              <td> Mujahid Islami Primaldi Abdullah</td>
+            </tr>
+            <tr>
+              <td>Address </td>
+              <td> : </td>
+              <td> Gang Kalimasada 103 Giwangan Umbulharjo Yogyakarta</td>
+            </tr>
+            <tr>
+              <td>Phone </td>
+              <td> : </td>
+              <td> 081252577301</td>
+            </tr>
+            <tr>
+              <td>Email </td>
+              <td> : </td>
+              <td> mujahidislami030@gmail.com</td>
+            </tr>
+          </table>
+        </div>
+
+        <div class="col m6">
+          <p class="blue-text text-accent-3">HTML & CSS</p>
+          <div class="progress">
+            <div class="determinate blue accent-3" style="width: 65%"></div>
+          </div>
+          <p class="blue-text text-accent-3">JavaScript</p>
+          <div class="progress">
+            <div class="determinate blue accent-3" style="width: 69%"></div>
+          </div>
+          <p class="blue-text text-accent-3">PHP</p>
+          <div class="progress">
+            <div class="determinate blue accent-3" style="width: 73%"></div>
+          </div>
+          <p class="blue-text text-accent-3">NodeJS</p>
+          <div class="progress">
+            <div class="determinate blue accent-3" style="width: 70%"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>  
+
+  <footer class="blue accent-3 white-text flow-text center" style="padding: 10px"; >
+      © 2019 Copyright By Mujahid Islami Primaldi Abdullah
+  </footer>
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+          
+  <script>
+      $(document).ready(function(){
+        $('.sidenav').sidenav();
+      });
+
+      $(document).ready(function(){
+        $('.slider').slider({
+          indicators: false,
+          height: 650,
+          interval: 3000
+        });
+      });
+
+      $(document).ready(function(){
+        $('#modal').modal();
+        $('#modal').modal('open'); 
+     });
+  </script>
+</body>
+</html>

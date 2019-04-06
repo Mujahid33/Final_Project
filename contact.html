@@ -1,0 +1,151 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>MY WEBSITES</title>
+
+    <!--Import Google Icon Font-->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+  </head>
+  <body>
+    <!-- Modal Structure -->
+    <div id="modal" class="modal">
+      <div class="modal-content blue accent-3 white-text">
+        <h4>Welcome To My Websites</h4>
+        <p>This is contact page. You can contact me from this page</p>
+        <p>If you wanna contact me, don't forget to use web server</p>
+        <p>If you can't exit from this modal, just press esc</p>
+      </div>
+      <div class="modal-footer blue accent-3">
+        <a
+          href="#!"
+          class="modal-action modal-close waves-effect waves-green btn-flat white-text"
+          >Go to page</a
+        >
+      </div>
+    </div>
+
+    <div class="navbar-fixed">
+      <nav class="blue accent-3">
+        <div class="container">
+          <div class="nav-wrapper">
+            <a href="index.html" class="brand-logo">MY WEBSITES</a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"
+              ><i class="material-icons">menu</i></a
+            >
+            <ul class="right hide-on-med-and-down">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <section class="contact">
+      <div class="container">
+        <div class="row">
+          <h4 class="center blue-text text-accent-3">CONTACT</h4>
+          <hr class="center blue accent-3" style="padding: 1px;" />
+          <form
+            class="col m6 offset-m3"
+            action="https://formspree.io/mujahidislami030@gmail.com"
+            method="POST"
+          >
+            <div class="input-field">
+              <input
+                id="nama"
+                name="nama"
+                type="text"
+                class="validate"
+                required
+              />
+              <label for="nama">Name</label>
+            </div>
+            <div class="input-field">
+              <input
+                id="email"
+                name="email"
+                type="email"
+                class="validate"
+                required
+              />
+              <label for="email">Email</label>
+            </div>
+            <div class="input-field">
+              <textarea
+                class="materialize-textarea"
+                name="message"
+                id="message"
+                required
+              ></textarea>
+              <label for="message">Message</label>
+            </div>
+            <button
+              class="btn waves-effect waves-light blue accent-3"
+              type="submit"
+              name="action"
+            >
+              Send
+              <i class="material-icons right">send</i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="blue accent-3 white-text flow-text center"
+      style="padding: 10px"
+      ;
+    >
+      © 2019 Copyright By Mujahid Islami Primaldi Abdullah
+    </footer>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $(".sidenav").sidenav();
+      });
+
+      $(document).ready(function() {
+        $(".slider").slider({
+          indicators: false,
+          height: 650,
+          interval: 3000
+        });
+      });
+
+      $(document).ready(function() {
+        $("#modal").modal();
+        $("#modal").modal("open");
+      });
+    </script>
+  </body>
+</html>
